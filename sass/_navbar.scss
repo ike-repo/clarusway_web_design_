@@ -1,0 +1,90 @@
+.header {
+    grid-column: 1 / -1;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #bd49bd;
+    font-size: x-large;
+    background-color: #424242;
+    color: white;
+    .left-header {
+        font-weight: 900;
+        padding: 1em;
+    }
+    #left-header-first {
+        color: #aa35aa;
+        padding-right: 0.2em;
+    }
+    #left-header-second {
+        padding-left: 0.2em;
+    }
+}
+
+.clarusway {
+    display: flex;
+}
+
+.right-header {
+    display: flex;
+    word-spacing: 20em;
+    padding: 1em;
+    .header-links {
+        color: white;
+        font-size: small;
+    }
+}
+
+.mid-nav {
+    grid-area: 6 / 1 / 7 / -1;
+    display: flex;
+    min-height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #424242;
+    color: white;
+    &>.input-set {
+        grid-column: 6/5/7/6;
+        display: inline-flex;
+        margin-left: auto;
+        padding: 1em;
+        height: 1.7em;
+        box-shadow: none;
+        &>#inputbox {
+            border: none;
+            border-radius: 0.1em;
+            min-height: 1.7em;
+            padding-right: 5em;
+        }
+        &>#subscribe {
+            min-height: 1.7em;
+            border: none;
+            border-radius: 0.1em;
+            box-shadow: none;
+            min-width: 5em;
+            margin-left: 0.3em;
+            background-color: #ff3d00;
+            color: white;
+            font-size: 0.7em;
+        }
+    }
+}
+
+#midnav-par {
+    padding-left: 1em;
+}
+
+footer {
+    border: 3px solid green;
+    grid-area: 10 / 1 / 11 / -1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    div>img {
+        width: 30%;
+        height: 30px;
+    }
+    // div>p {
+    //     color: red;
+    // }
+}
