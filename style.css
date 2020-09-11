@@ -6,8 +6,8 @@
 .container {
   display: grid;
   width: 100%;
-  grid-template-areas: "header header header header header" "title title title title title" "mid-nav mid-nav mid-nav mid-nav mid-nav" ". branch branch branch ." "footer footer footer footer footer";
-  grid-template-rows: 2fr 4fr 1fr 3fr 1fr;
+  grid-template-areas: "header header header header header" "title title title title title" "title title title title title" "title title title title title" "title title title title title" "mid-nav mid-nav mid-nav mid-nav mid-nav" "course course course course course" "course course course course course" "course course course course course" "footer footer footer footer footer";
+  grid-template-rows: 1fr 4fr 1fr 3fr 1fr;
   grid-template-columns: repeat(5, 1fr);
   font-family: "Open Sans", Arial, sans-serif;
 }
@@ -19,6 +19,7 @@ a {
 #web-design {
   background: url("/Users/ike/Desktop/CW/Sites/clarusway_web_design/img/showcase.jpg");
   display: grid;
+  grid-area: 2/1/6/6;
   align-items: center;
   justify-content: center;
   width: 120em;
@@ -26,9 +27,12 @@ a {
   object-position: bottom;
 }
 
+.hero {
+  grid-area: 7/1/10/6;
+}
+
 .header {
-  grid-column: 1/-1;
-  grid-row: 1/2;
+  grid-area: 1/1/2/6;
   display: flex;
   justify-content: space-between;
   border-bottom: 1.5px solid #bd49bd;
@@ -63,7 +67,7 @@ a {
 }
 
 .mid-nav {
-  grid-area: 6/1/7/-1;
+  grid-area: 6/1/7/6;
   display: flex;
   min-height: 4rem;
   width: 100%;
@@ -115,14 +119,7 @@ footer div > img {
 }
 
 .main-title {
-  min-height: 100%;
-  grid-area: 2/1/6/-1;
-  display: flex;
-}
-
-.hero {
-  grid-area: 7/1/10/-1;
-  display: flex;
+  width: 100%;
 }
 
 h1 {
@@ -136,6 +133,28 @@ h1 {
   color: white;
   vertical-align: top;
   padding-bottom: 7em;
+}
+
+.hero {
+  grid-area: 7/1/10/6;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.hero .courses#pic1 {
+  width: 10%;
+}
+.hero .courses#pic2 {
+  max-width: 75%;
+  height: auto;
+}
+.hero .courses#pic3 {
+  max-width: 75%;
+  height: auto;
+}
+
+.courses {
+  margin: 3em 1vw;
 }
 
 /*# sourceMappingURL=style.css.map */
